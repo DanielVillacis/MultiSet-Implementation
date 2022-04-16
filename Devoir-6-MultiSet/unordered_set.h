@@ -198,3 +198,4 @@ void unordered_multiset<TYPE,classe_de_dispersion>::ligne(std::stringstream& out
 #include "unordered_set2.h"
 
 #endif /* unordered_multiset_h */
+

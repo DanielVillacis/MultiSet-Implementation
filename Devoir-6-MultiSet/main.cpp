@@ -33,9 +33,9 @@ int main(int argc, const char * argv[]) {
     size_t nb=UM.count(55);
     cout<<"Il y a "<<nb<<" 55 dans l'ensemble"<<endl;
     cout<<"enlever le premier"<<endl;
-//    it=UM.find(55);
-//    UM.erase(it);
-//    UM.afficher();
+    it=UM.find(55);
+    UM.erase(it);
+    UM.afficher();
     
     cout<<endl<<"Itérer sur l'ensemble"<<endl;
     for(it=UM.begin();it!=UM.end();++it)cout<<*it<<" ";
