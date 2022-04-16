@@ -30,7 +30,7 @@ void unordered_multiset<TYPE, classe_de_dispersion>::rehash(size_t nbalv){
     if (size < copyUM.REP.size()){
         for(size_t i = 0; i < REP.size(); i++) {
             if(REP[i] != nullptr) {
-                for(auto j = REP[i]->begin(); j != REP[i]->end(); j++) {
+                for(std::list<double>::iterator j = REP[i]->begin(); j != REP[i]->end(); j++) {
                     copyUM.insert(*j);
                 }
             }
@@ -168,7 +168,7 @@ unordered_multiset<TYPE,classe_de_dispersion>::find(const TYPE& VAL){
     size_t size = REP.size() - 1;
     size_t alv = disperseur(VAL) % size;
 
-    for (auto i = REP[alv]->begin(); i != REP[alv]->end(); i++) {
+    for (std::list<double>::iterator i = REP[alv]->begin(); i != REP[alv]->end(); i++) {
         if(*i == VAL){
             return iterator(REP.begin() + alv, i);
         }
