@@ -5,8 +5,7 @@
 //  Jean Goulet
 //  Copyleft 2017
 //
-//  Modifié par :   Carlos Reyes Marquez (reyc2201)
-//                  Daniel Villacis (vild2705)
+//  Modifié par : Daniel Villacis (vild2705)
 
 #ifndef unordered_multiset_2_h
 #define unordered_multiset_2_h
